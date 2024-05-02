@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>On The Way Tourism</title>
+    <link rel="stylesheet" href="CSS/Locations.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body id="grad1">
+    <div>
+        <header class="c">
+    <section>
+        <div style="text-align: center;">
+            <div class="nav-buttons">
+              <h1 class="logo" onclick="handleClickEvent()"id="clk" style="cursor: pointer;">OTW Tourism</h1>
+              <script>
+                  function handleClickEvent()
+                  {
+                      location.href = "Home.php";
+                  }
+                  window.onload = function() {
+                      document.getElementById("clk").addEventListener("click", handleClickEvent);
+                  };
+              </script>
+                <p class="p1">-On The Way Tourism</p>
+                <a href="Home.php" class="button b"><b>Home</b></a>
+                <a href="Locations.html" class="button b"><b>Locations</b></a>
+                <a href="Booking.html" class="button b"><b>Booking</b></a>
+                <a href="Contact us.html" class="button b"><b>Contact Us</b></a>
+            </div>
+                
+<a class="button b" style="color: black; 
+margin-left:-1370px; 
+border: black 2px solid; 
+border-radius:25px;" href="Signin.php" onclick="signOut()">Sign out</a>
+        </div>
+    </section>
+</header>
+
+<p style="font-family: cursive; font-size: xx-large; text-align: center;">
+    Discover the world at your fingertips.<br>Choose your perfect destination and let us bring the experience to you.
+</p>
+
+<!---Script for image changing-->
+
+<script>
+  // Script for Lakshadweep
+  
+  let l = 0;
+let lakshadweepImages = ["img/Lakshadweep.jpg", "img/lak1.jpg", "img/lak2.jpeg", "img/lak3.jpg"];
+let lakshadweepInterval;
+
+function startl() {
+  lakshadweepInterval = setInterval(changeLakshadweep, 2000);
+}
+
+function changeLakshadweep() {
+  document.getElementsByName("Lak")[0].src = lakshadweepImages[l];
+  l++;
+  if (l >= lakshadweepImages.length) {
+    l = 0;
+  }
+}
+
+function stopl() {
+  clearInterval(lakshadweepInterval);
+  document.getElementsByName("Lak")[0].src = "img/Lakshadweep.jpg";
+  l = 0;
+}
+  // Script For Mahabaleshwar
+  
+  let m = 0;
+  let mahabaleshwarImages = ["img/Mahabaleshwar.jpeg", "img/mah1.jpeg", "img/mah2.jpeg", "img/mah3.jpeg"];
+  let mahabaleshwarInterval;
+  
+  function startm(){
+    mahabaleshwarInterval = setInterval(changeMahabaleshwar, 2000);
+  }
+
+  function changeMahabaleshwar() {
+      document.getElementsByName("mah")[0].src = mahabaleshwarImages[m];
+      m++;
+      if (m >= mahabaleshwarImages.length) {
+          m = 0;
+      }
+  }
+  function stopm()
+  {
+    clearInterval(mahabaleshwarInterval);
+    document.getElementsByName("mah")[0].src = "img/Mahabaleshwar.jpeg";
+  m = 0;
+  }
+  // Script for Shimla-Manali
+  
+  let s = 0;
+  let shimlaManaliImages = ["img/shimla.jpeg", "img/s2.jpeg", "img/s3.jpeg", "img/s4.jpeg"];
+  let shimlaManaliInterval;
+  
+function starts()
+{
+  shimlaManaliInterval = setInterval(changeShimlaManali, 2000);
+}
+
+  function changeShimlaManali() {
+      document.getElementsByName("sim")[0].src = shimlaManaliImages[s];
+      s++;
+      if (s >= shimlaManaliImages.length) {
+          s = 0;
+      }
+  }
+function stops()
+{
+  clearInterval(shimlaManaliInterval);
+  document.getElementsByName("sim")[0].src = "img/shimla.jpeg";
+  s = 0;
+}
+  // Script for Rann of kutch
+  
+  let r = 0;
+  let RannImages = ["img/rann.jpg", "img/r1.jpeg", "img/r2.jpg", "img/r3.jpeg"];
+  let RannInterval;
+
+  function startr()
+  {
+    RannInterval = setInterval(changerann, 2000);
+  }
+  
+  function changerann() {
+      document.getElementsByName("rann")[0].src = RannImages[r];
+      r++;
+      if (r >= RannImages.length) {
+          r = 0;
+      }
+  }
+  function stopr()
+  {
+    clearInterval(RannInterval);
+    document.getElementsByName("rann")[0].src = "img/rann.jpg";
+    r = 0;
+  }
+  // Script for Kerela
+  
+  let ker = 0;
+  let kerelaImages = ["img/kerela.jpeg", "img/k1.jpeg", "img/k2.jpg", "img/k3.jpeg"];
+  let kerelaInterval;
+
+  function startk()
+  {
+    kerelaInterval = setInterval(changekerela, 2000);
+  }
+  
+  function changekerela() {
+      document.getElementsByName("kerela")[0].src = kerelaImages[ker];
+      ker++;
+      if (ker >= kerelaImages.length) {
+          ker = 0;
+      }
+  }
+  function stopk()
+  {
+    clearInterval(kerelaInterval);
+    document.getElementsByName("kerela")[0].src = "img/kerela.jpeg";
+    ker = 0;
+  }
+  // Script for Banglore
+  
+  let b = 0;
+  let BangloreImages = ["img/Bang.jpg", "img/b1.jpeg", "img/b2.jpg", "img/b3.jpeg"];
+  let BangloreInterval;
+  
+  function startb(){
+    BangloreInterval = setInterval(changeBanglore, 2000);
+  }
+  function changeBanglore() {
+      document.getElementsByName("Ban")[0].src = BangloreImages[b];
+      b++;
+      if (b >= BangloreImages.length) {
+          b = 0;
+      }
+  }
+  function stopb()
+  {
+    clearInterval(BangloreInterval);
+    document.getElementsByName("Ban")[0].src = "img/bang.jpg";
+    b =0;
+  }
+
+  // Script for goa
+
+  let g = 0;
+  let goaImages = ["img/goa.jpg", "img/g1.jpg", "img/g2.jpg", "img/g3.jpg"];
+  let goaInterval;
+  
+  function startg(){
+    goaInterval = setInterval(changegoa, 2000);
+  }
+  function changegoa() {
+      document.getElementsByName("goa")[0].src = goaImages[g];
+      g++;
+      if (g >= goaImages.length) {
+          g = 0;
+      }
+  }
+  function stopg()
+  {
+    clearInterval(goaInterval);
+    document.getElementsByName("goa")[0].src = "img/goa.jpg";
+    g = 0;
+  }
+
+// Script for statue of unity
+
+let st = 0;
+let statueImages = ["img/statue.png", "img/statue1.jpg", "img/statue2.jpg", "img/statue3.jpg"];
+let statueInterval;
+
+function startst(){
+  statueInterval = setInterval(changestatue, 2000);
+}
+function changestatue() {
+    document.getElementsByName("statue")[0].src = statueImages[st];
+    st++;
+    if (st >= statueImages.length) {
+        st = 0;
+    }
+}
+function stopst()
+{
+  clearInterval(statueInterval);
+  document.getElementsByName("statue")[0].src = "img/statue.png";
+  st = 0;
+}
+
+  </script>
+
+  <!---Rann-->
+
+<div class="container">
+    <div class="cont__item">
+        <picture>
+        <img style="cursor: pointer;" onclick="changerann" name="rann" src="img/rann.jpg" alt="" onmouseover="startr()"
+        onmouseout="stopr()"/>
+      </picture>
+    </a>
+      <div class="cont__info">
+        <h4>Rann Of Kutch</h4>
+        <h3 style="text-align: center;">Recommended Months To Visit</h3>
+        <p>November |
+          December |
+          January |
+          February
+          <br><i>" Attending cultural festivals like Rann Utsav and enjoying outdoor activities"</i>
+        </p>
+        <hr><h3 style="text-align: center;">Places To Visit</h3>
+      
+          <ul style="list-style-type:circle; margin-left:80px;">
+            <li>Kutch Desert Wildlife Sanctuary</li>
+            <li>Mandvi Beach</li>
+            <li>Kala Dungar</li>
+            <li>Narayan Sarovar</li>
+          </ul>
+        <hr>
+        <p><b>Destination Covered:</b>
+            Bhuj | Tent-City </p>
+            <br>
+        <p style="font-size: small;">*Prices May differ according to Dates</p>
+        <p style="font-size: small;">*Chilren is considered under age 3yrs-10yrs</p>
+        <p style="font-size: small;">*Chilren's prices are considered half of the price</p>
+    </div>
+    </div>
+
+      <!---Shimal-->
+
+    <div class="cont__item">
+      <picture>
+        <img style="cursor: pointer;" name="sim" src="img/shimla.jpeg" alt="" onmouseover="starts()"
+        onmouseout="stops()" />
+      </picture>
+    </a>
+      <div class="cont__info">
+        <h4>Shimla-Manali</h4>
+        <h3 style="text-align: center;">Recommended Months To Visit</h3>
+        <p>April to June  |
+          September to November
+          <br><i>"Exploring the natural beauty of the Himalayas without the harsh winter conditions or monsoon rains."</i>
+        </p>
+        <hr><h3 style="text-align: center;">Places To Visit</h3>
+      
+          <ul style="list-style-type:circle; margin-left:110px;">
+          
+            <li>Hadimba Devi Temple</li>
+            <li>Solang Valley</li>
+            <li>Rohtang Pass</li>
+
+          </ul>
+        <hr>
+        <p><b>Destination Covered:</b>
+            Delhi | Shimla | Manali</p>
+            <br>
+        <p style="font-size: small;">*Prices May differ according to Dates</p>
+        <p style="font-size: small;">*Chilren is considered under age 3yrs-10yrs</p>
+        <p style="font-size: small;">*Chilren's prices are considered half of the price</p>
+      </div>
+    </div>
+
+  <!---Mahabaleshwar-->
+
+    <div class="cont__item">
+      
+            <picture>
+              <img style="cursor: pointer;" name="mah" src="img/Mahabaleshwar.jpeg" alt="" onmouseover="startm()"
+              onmouseout="stopm()" />
+            </picture>
+          </a>
+            <div class="cont__info">
+              <h4>Mahabaleshwar</h4>
+              <h3 style="text-align: center;">Recommended Months To Visit</h3>
+              <p>October to June
+                <br><i>"relishing the breathtaking views of valleys and waterfalls without the discomfort of extreme heat or heavy rains."</i>
+              </p>
+              <hr><h3 style="text-align: center;">Places To Visit</h3>
+            
+                <ul style="list-style-type:circle; margin-left:90px;">
+                  <li>Mapro Garden</li>
+                  <li>Panchgani</li>
+              
+                </ul>
+              <hr>
+              <p><b>Destination Covered:</b>
+                MAHABALESHWAR | PANCHGANI | PRATAPGARH </p>
+                  <br>
+              <p style="font-size: small;">*Prices May differ according to Dates</p>
+              <p style="font-size: small;">*Chilren is considered under age 3yrs-10yrs</p>
+              <p style="font-size: small;">*Chilren's prices are considered half of the price</p>
+            </div>
+    </div>
+
+  <!---Banglore-->
+
+
+    <div class="cont__item">
+
+          <picture>
+            <img style="cursor: pointer;" name="Ban" src="img/Bang.jpg" alt="" onmouseover="startb()"
+            onmouseout="stopb()"/>
+          </picture>
+        </a>
+        
+          <div class="cont__info">
+            <h4>Banglore</h4>
+            <h3 style="text-align: center;">Recommended Months To Visit</h3>
+        <p>October to February 
+          <br><i>"when the weather is cooler and more comfortable."</i>
+        </p>
+        <hr><h3 style="text-align: center;">Places To Visit</h3>
+      
+          <ul style="list-style-type:circle; margin-left:80px;">
+            <li>Wonderla Bangalore (Amusement Park)</li>
+            <li>Mysore Palace (Mysore)</li>
+            <li>Bannerghatta National Park</li>
+            <li>UB City (Shopping and Dining Complex)</li>
+            <li>Nandi Hills</li>
+          </ul>
+            <hr>
+            <p><b>Destination Covered:</b>
+              OOTY | COORG | MYSORE </p>
+                <br>
+            <p style="font-size: small;">*Prices May differ according to Dates</p>
+            <p style="font-size: small;">*Chilren is considered under age 3yrs-10yrs</p>
+            <p style="font-size: small;">*Chilren's prices are considered half of the price</p>
+          </div>
+  </div>
+
+  <!---kerela-->
+
+
+  <div class="cont__item">
+
+        <picture>
+          <img style="cursor: pointer;" name="kerela" src="img/kerela.jpeg" alt="" onmouseover="startk()"
+          onmouseout="stopk()"/>
+        </picture>
+      </a>
+        <div class="cont__info">
+          <h4>kerela</h4>
+          <h3 style="text-align: center;">Recommended Months To Visit</h3>
+        <p>October to March
+          <br><i>"when the weather is relatively cooler and drier, making it ideal for exploring."</i>
+        </p>
+        <hr><h3 style="text-align: center;">Places To Visit</h3>
+      
+          <ul style="list-style-type:circle; margin-left:80px;">
+            <li>Alleppey (Alappuzha) Backwaters</li>
+            <li>Kochi (Cochin) Fort and Chinese Fishing Nets</li>
+            <li>Kovalam Beach</li>
+            
+          </ul>
+          <hr>
+          <p><b>Destination Covered:</b>
+            Munnar | Thekkady | Alleppey </p>
+              <br>
+          <p style="font-size: small;">*Prices May differ according to Dates</p>
+          <p style="font-size: small;">*Chilren is considered under age 3yrs-10yrs</p>
+          <p style="font-size: small;">*Chilren's prices are considered half of the price</p>
+        </div>
+</div>
+
+  <!---Lakshadweep-->
+
+
+    <div class="cont__item" >
+
+        <picture>
+          <img style="cursor: pointer;" name="Lak" src="img/Lakshadweep.jpg" alt="" onmouseover="startl()"
+    onmouseout="stopl()"  />
+        </picture>
+      </a>
+        <div class="cont__info">
+          <h4>Lakshadweep</h4>
+          <h3 style="text-align: center;">Recommended Months To Visit</h3>
+          <p>October to May 
+            <br><i>"when the weather is pleasant with calm seas, making it ideal for activities like snorkeling and scuba diving"</i>
+          </p>
+          <hr><h3 style="text-align: center;">Places To Visit</h3>
+        
+            <ul style="list-style-type:circle; margin-left:80px;">
+          
+              <li>Kalpeni Island</li>
+              <li>Pitti Island</li>
+  
+            </ul>
+          <hr>
+          <p><b>Destination Covered:</b>
+            Lakshadweep | Agatti Island
+            | Kavaratti Island Lagoon </p>
+              <br>
+          <p style="font-size: small;">*Prices May differ according to Dates</p>
+          <p style="font-size: small;">*Chilren is considered under age 3yrs-10yrs</p>
+          <p style="font-size: small;">*Chilren's prices are considered half of the price</p>
+        </div>
+      </div>
+
+  <!---Goa-->
+
+      <div class="cont__item" >
+
+          <picture>
+            <img style="cursor: pointer;" name="goa" src="img/goa.jpg" alt="" onmouseover="startg()"
+      onmouseout="stopg()"  />
+          </picture>
+        </a>
+          <div class="cont__info">
+            <h4>Goa</h4>
+            <h3 style="text-align: center;">Recommended Months To Visit</h3>
+          <p>November to March
+            <br><i>"when the weather is pleasant with clear skies"</i>
+          </p>
+          <hr><h3 style="text-align: center;">Places To Visit</h3>
+        
+            <ul style="list-style-type:circle; margin-left:80px;">
+          
+              <li>Basilica of Bom Jesus</li>
+              <li>Palolem Beach</li>
+              <li>Dudhsagar Falls</li>
+              <li>Baga Beach</li>
+  
+            </ul>
+            <hr>
+            <p><b>Destination Covered:</b>
+              Goa - Zone Connect by The Park Parra and similar
+               </p>
+                <br>
+            <p style="font-size: small;">*Prices May differ according to Dates</p>
+            <p style="font-size: small;">*Chilren is considered under age 3yrs-10yrs</p>
+            <p style="font-size: small;">*Chilren's prices are considered half of the price</p>
+          </div>
+        </div>
+
+  <!---Statue Of Unity-->
+
+    <div class="cont__item" >
+
+        <picture>
+          <img style="cursor: pointer;" name="statue" src="img/statue.png" alt="" onmouseover="startst()"
+    onmouseout="stopst()"  />
+        </picture>
+      </a>
+        <div class="cont__info">
+          <h4>Statue Of Unity</h4>
+          <h3 style="text-align: center;">Recommended Months To Visit</h3>
+          <p>November to February
+            <br><i>"when the weather allowing for enjoyable outdoor activities and sightseeing without the extreme heat of the summer months."</i>
+          </p>
+          <hr><h3 style="text-align: center;">Places To Visit</h3>
+        
+            <ul style="list-style-type:circle; margin-left:80px;">
+          
+              <li>Statue of Unity Observation Deck</li>
+              <li>Sardar Sarovar Dam</li>
+
+  
+            </ul>
+          <hr>
+          <p><b>Destination Covered:</b>
+          Statue Of Unity </p>
+              <br>
+          <p style="font-size: small;">*Prices May differ according to Dates</p>
+          <p style="font-size: small;">*Chilren is considered under age 3yrs-10yrs</p>
+          <p style="font-size: small;">*Chilren's prices are considered half of the price</p>
+        </div>
+      </div>
+      
+      <section style="text-align: center; background-color: beige; height:230px; color:black; position: relative;
+      width: 100%;">
+          <p style="margin-top: 75px; font-size:larger"><b>&copy; 2024 OTW Tourism. All rights reserved.</b></p>
+          <a href="" class="button" style="margin-top: -5px; margin-left: -595px; position:absolute; color: black;">OTWTOURISM@gmail.com</a>
+          <a href="">
+            <i style="color: black; margin-top: -35px; text-decoration: wavy; position: absolute;" class="fa-brands fa-instagram"> OTW_TOURISM
+          </i></a>
+          <a href="">
+          <i class="fa-brands fa-facebook" style="color: black; text-decoration: wavy; margin-top: -05px; position: absolute;"> OTW_TOURISM
+        </i>
+              </a>
+              <a href="">
+              <i class="fa-brands fa-x-twitter" style=" color: black; text-decoration: wavy; margin-top: 22px; position: absolute;"> OTW_TOURISM</i>
+              </a>
+          <img style="height: 60%; width:20%; margin-left: -1150px;" src="img/paper_plane.png"/>
+      </section>
+      
+  </body>
+  </html>
