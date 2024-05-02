@@ -1,0 +1,224 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#grad1 {
+    background-color:beige;
+    width: auto;
+    margin-bottom: -32px;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    border: 2px;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: wavy;
+    display: inline-block;
+    font-size: x-large;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin-left: 98px;
+}
+
+.b {
+    color: black;
+}
+
+.b:hover {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.418);
+    display: inline-block;
+    
+
+}
+.p1 {
+    margin-top: 58px;
+    position: absolute;
+    padding: 0px;
+    font-size: x-large;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: xxx-large;
+    color: black;
+    text-align: left;
+    margin-top: auto;
+    padding: 0px;
+    font-family: 'Croissant One', cursive;
+}
+
+h2 {
+    margin-left: 10px;
+    margin-top: 0px;
+    color: black;
+    text-align: left;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.p2 {
+    padding: auto;
+    height: auto;
+    margin-left: 10px;
+    word-wrap: break-word;
+    color: black;
+    font-size: xx-large;
+    width: 95%;
+}
+.f{
+    position: relative;
+
+}
+footer {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    text-justify: auto;
+    color: white;
+    background-color: transparent;
+    width: auto;
+    height: 150px;
+    padding: auto;
+    background-size: auto;
+    font-size: xx-large;
+    background-color: black;
+    box-shadow: shadow(10px,10px,0px,5px);
+    background-repeat: repeat;
+    background-size: contain;
+    position: relative;
+
+}
+.tc{
+    word-wrap: break-word;
+    font-size: large;
+    margin: 10px;
+}
+.contact{ margin: 10px;
+    font-size: x-large;
+    text-align: left;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+iframe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    display: flex;
+    margin-left: 450px;
+    position: relative;
+}
+.body1 {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    justify-content: space-evenly;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: justify;
+}
+.sections-container {
+    display: flex;
+    margin: 10px;
+    width: 1000px;
+    height: 350px;
+}
+.section {
+    flex: 1;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    
+}
+.e2 {
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+.emergency-contact { 
+    margin: 10px;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.faq-container {
+    max-width: 2000px;
+    display: flex;
+    margin: 0px;
+
+}
+.faq {
+    margin-left: 25px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    
+    transition: transform 0.3s;
+}
+.faq:hover {
+    transform: translateY(-5px);
+}
+h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+p {
+    line-height: 1.6;
+}

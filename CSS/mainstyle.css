@@ -1,0 +1,145 @@
+#grad1{
+    width: auto;
+    height: auto;
+    background-image: url('img/peakpx.jpg');
+    background-repeat: no-repeat;
+}
+.c{  
+width: auto;  
+height: auto;  
+float: right;
+display: flex;
+text-align: right; 
+margin-right: 302px;
+}
+.button{
+
+border: 2px;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: wavy;
+display: inline-block;
+font-size: x-large;
+margin: auto;
+transition-duration: 0.5s;
+cursor: pointer;
+}
+.b{
+color: black;
+
+}
+.b:hover{
+background-color: transparent;
+color: white;
+}
+.p1{
+    margin-top: 0px; 
+    position: absolute; 
+    padding: 0px; 
+    font-size: xx-large; 
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+h1 {
+
+    font-size: 75px;
+    color:whitesmoke;
+    font-family: 'Croissant One', cursive;
+    text-align: left;
+    margin-top: -90px;
+    margin-right: -550px;
+    padding: 0px;
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-size: xxx-large;
+        color:whitesmoke;
+        text-align: left;
+        margin-top: 230px;
+        margin-right: -280px;
+        padding: 0px;
+    }
+
+form {
+    border: 3px transparent;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    width: 500px;
+    padding: 50px;
+    margin-left: 40px;
+    margin-top: 90px;
+    height: auto;
+    backdrop-filter: blur(10px);
+    font-size: large;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0); 
+}
+
+button[type="submit"] {
+    background-color: transparent;
+    color: black; 
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: black;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: large;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.c1 .a1{
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+span.ps {
+    float: right;
+    padding-top: 16px;
+}
+input[type="text"]::placeholder {
+    color: black; 
+}
+input[type="password"]::placeholder {
+    color: black; 
+}
+.a1{
+
+    border: 2px;
+    border-radius: 5px;
+    padding: auto;
+    margin: auto;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    text-decoration: wavy;
+    text-align: center;
+    font-size: medium;
+    margin: auto;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    color: black;
+    }
