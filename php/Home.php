@@ -5,6 +5,7 @@ include('db.php');
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="google-site-verification" content="ptvyBUPVaoCgZ-D7tuDhRsl3Da3NXtFKqYv_FJpW0zM" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
