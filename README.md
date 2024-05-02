@@ -3,14 +3,14 @@
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
 </h1>
 
-# OTW Toursim
+# 🗺️ OTW Toursim
 This is a tourism website built using HTML, CSS , JavaScript and PHP. It aims to provide users with an engaging and informative platform to explore various travel destinations, discover hidden gems, and plan their dream vacations.
 
-<div>
-  <img src=""/>
-</div>
+ ![Alt text](ScreenShots/Main.png)
 
-# Key Features
+---
+
+# 🔑 Key Features
 
 - Structured HTML:
 
@@ -44,3 +44,16 @@ For some of the above PHP functionalities,Google Cloud Platform (GCP) services i
 
 1. Cloud SQL: You can create and manage a MySQL database on GCP to store destination data, travel deals, or user information.<br>
 2. Cloud Functions: For server-side logic like processing form submissions or interacting with APIs, serverless functions on GCP can be a scalable and cost-effective solution.<br>
+
+---
+
+# 🖼️ ScreenShots:
+
+ ![Alt text](ScreenShots/Signin.png)
+  ![Alt text](ScreenShots/Singnup.png)
+   ![Alt text](ScreenShots/Home.jpeg)
+   ![Alt text](ScreenShots/Locations.jpeg)
+    ![Alt text](ScreenShots/Booking.jpeg)
+    ![Alt text](ScreenShots/Contact_us.jpeg)
+     
+     
